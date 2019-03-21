@@ -20,11 +20,6 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.dominokit.samples</groupId>
-      <artifactId>dominodo-client</artifactId>
-      <version>1.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
       <groupId>com.google.jsinterop</groupId>
       <artifactId>jsinterop-annotations</artifactId>
       <version>HEAD-SNAPSHOT</version>
@@ -245,14 +240,6 @@
                 <extern>${project.basedir}/src/main/externs/svg.js</extern>
               </externs>
               <compilationLevel>BUNDLE</compilationLevel>
-              <excludedArtifacts>
-                <artifactItem>
-                  <groupId>org.dominokit.samples</groupId>
-                  <artifactId>dominodo-client</artifactId>
-                  <version>1.0-SNAPSHOT</version>
-                  <classifier>compile</classifier>
-                </artifactItem>
-              </excludedArtifacts>
             </configuration>
           </plugin>
         </plugins>
@@ -276,7 +263,7 @@
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
       <snapshots>
         <enabled>true</enabled>
-        <updatePolicy>always</updatePolicy>
+        <updatePolicy>daily</updatePolicy>
         <checksumPolicy>fail</checksumPolicy>
       </snapshots>
     </pluginRepository>
@@ -312,7 +299,7 @@
       <url>https://repo.vertispan.com/gwt-snapshot/</url>
       <snapshots>
         <enabled>true</enabled>
-        <updatePolicy>always</updatePolicy>
+        <updatePolicy>daily</updatePolicy>
         <checksumPolicy>fail</checksumPolicy>
       </snapshots>
     </repository>
@@ -321,7 +308,7 @@
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
       <snapshots>
         <enabled>true</enabled>
-        <updatePolicy>always</updatePolicy>
+        <updatePolicy>daily</updatePolicy>
         <checksumPolicy>fail</checksumPolicy>
       </snapshots>
     </repository>
